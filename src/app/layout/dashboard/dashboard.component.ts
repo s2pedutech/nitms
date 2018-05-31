@@ -9,6 +9,7 @@ import { routerTransition } from '../../router.animations';
 })
 export class DashboardComponent implements OnInit {
     public sliders: Array<any> = [];
+    public alerts: Array<any> = [];
 
     constructor() {
         this.sliders.push(
@@ -30,10 +31,12 @@ export class DashboardComponent implements OnInit {
                     'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
             }
         );
-
     }
 
     ngOnInit() {}
 
-   
+    public closeAlert(alert: any) {
+        const index: number = this.alerts.indexOf(alert);
+        this.alerts.splice(index, 1);
+    }
 }

@@ -12,6 +12,7 @@ import {
 import { StatModule } from '../../shared';
 import { GetCourseComponent } from './components/get-course/get-course.component';
 
+
 @NgModule({
     imports: [
         CommonModule,
@@ -26,6 +27,6 @@ import { GetCourseComponent } from './components/get-course/get-course.component
         NotificationComponent,
         ChatComponent,
         GetCourseComponent
-    ]
+            ]
 })
 export class DashboardModule {}

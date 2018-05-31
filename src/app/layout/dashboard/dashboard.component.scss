@@ -59,3 +59,164 @@ object-fit: cover;
 .group-title-index .bottom-title:before {
     right: -32px
 }
+element.style {
+}
+
+.margin1{
+
+}
+.why-choose-us .why-choose-us-wrapper-top {
+    position: mx-auto;
+}
+html * {
+    outline: 0 !important;
+}
+* {
+    // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.why-choose-us {
+    background-color: #242c42;
+    color: #fff;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section-padding{
+  padding: 50px 0;
+}
+
+// .title-2 {
+//     font-size: 30px;
+//     font-weight: 700;
+//     margin: 0;
+//     text-transform: uppercase;
+//     margin-bottom: 25px;
+// }
+
+.btn.btn-green-2 {
+    line-height: 40px;
+    background-color: transparent;
+}
+
+.btn {
+    border: 0;
+    border-radius: 0;
+    padding: 0 25px;
+    background: transparent;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.btn.btn-green:after, .btn.btn-green-2:after, .btn.btn-green-3:after, .btn.btn-transition:after, .btn.btn-transition-2:after, .btn.btn-transition-3:after, .btn.btn-blue:after, .btn.btn-grey:after, .btn.btn-404:after {
+    transition: all 0.5s ease;
+}
+.btn {
+    border: 0;
+    border-radius: 0;
+    padding: 0 25px;
+    background: transparent;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+// .btn.btn-green-2:before {
+//     position: absolute;
+//     content: '';
+//     border: 2px solid #fff;
+//     width: 100%;
+//     height: 100%;
+//     left: 0;
+// }
+// *:before, *:after {
+//     // -webkit-box-sizing: border-box;
+//     // -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+
+.top-courses {
+    text-align: center;
+}
+
+.section-padding {
+    padding: 50px 0;
+}
+
+
+
+.group-title-index {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+    color: #49575f;
+}
+
+.group-title-index .center-title {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+// .container1 {
+//     width: 970px;
+// }
+
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    float:right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 100px 300px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container>div>div {
+  /*text-align: center;*/
+  padding:20px 0;
+  font-size: 30px;
+  /*margin-right: 100px;*/
+}
