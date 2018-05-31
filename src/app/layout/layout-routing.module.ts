@@ -18,8 +18,9 @@ const routes: Routes = [
             { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
             { path: 'placement', loadChildren: './placement/placement.module#PlacementModule'},
             { path: 'certification', loadChildren: './certification/certification.module#CertificationModule'},
-            { path: 'examination', loadChildren: './examination/examination.module#ExaminationModule'}
-
+            { path: 'examination', loadChildren: './examination/examination.module#ExaminationModule'},
+            { path: 'accrediation', loadChildren: './accrediation/accrediation.module#AccrediationModule'},
+            { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusModule'}
         ]
     }
 ];
