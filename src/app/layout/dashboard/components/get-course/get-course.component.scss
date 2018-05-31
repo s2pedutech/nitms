@@ -1,0 +1,64 @@
+.choose-course .icon-circle {
+
+    position: relative;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin: 0 auto;
+
+}
+.choose-course .icon-circle .icon-background {
+    position: absolute;
+    bottom: 12px;
+    width: 146px;
+    left: 50%;
+    margin-left: -73px;
+    height: 146px;
+    border-radius: 50%;
+    background-color: #86bc42;
+    color: #fff;
+    z-index: 11;
+    display: table;
+    transition: all .5s ease-in-out;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+}
+.choose-course .icon-circle .icon-background .icons-img {
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 70px;
+    line-height: 1;
+    transition: all 0.4s ease;
+}
+.choose-course .icon-circle .icon-background {
+    color: #fff;
+}
+[class*="icon-"]::before {
+    display: inline-block;
+    font-family: 'Glyphter';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.choose-course .icon-circle .icon-background::after {
+    position: absolute;
+    content: '';
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
