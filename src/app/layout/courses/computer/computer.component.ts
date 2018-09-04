@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CourseService } from '../../../course.service';
 
 @Component({
   selector: 'app-computer',
@@ -7,16 +8,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./computer.component.scss']
 })
 export class ComputerComponent implements OnInit {
+	data : any;
+	Comdata: any;
+	Cdata = [];
+  	constructor(private router : Router, public courseService: CourseService) {
+		this.data = this.courseService.getCourses();
+		console.log(this.data);
+		this.Comdata = this.data[0];
+		this.Cdata = this.Comdata.cards;
+		console.log(this.Cdata);
+   	}
+	GoTo(item){
+		var d:any = {};
+		d.category = this.Comdata.name;
+		d.title = item.title;
 
-data = [{
-	title:'Computer Application',
-	desc:'These programs are meant for basically those professionals who are already working in technical departments of the corporate sector. These courses enable our students to go ahead and achieve the higher profiles in their respective organizations through a high profile curriculum.',
-	img:'assets/images/ce.jpg',
-}];
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+		this.router.navigate(['/courses/details'],{queryParams: d});
+	}
+  ngOnInit() { }
 }

@@ -1,0 +1,19 @@
+<div>
+	<h1>Name: {{data.name}}</h1>
+	<h3>Course: {{data.list.part}}</h3>
+	<table>
+		<tr style="background: #86bc42">
+			<th>Semester</th>
+			<th>Result</th>
+		</tr>
+		<tr *ngFor="let a of data.results; let i = index">
+			<th>Sem {{i+1}} Marksheet</th>
+			<td><img class="resultimg" [src]="a.img"></td>
+		</tr>
+		<tr>
+			<th>Certificate</th>
+			<td><img class="certificateimg" [src]="data.certificate.certificate"></td>
+		</tr>
+	</table>
+	<button><a href="/dashboard"> Log Out </a></button>
+</div>

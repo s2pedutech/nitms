@@ -1,0 +1,126 @@
+.container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.item1{
+   
+    /*float:left;*/
+}
+.temp{
+    padding-right: 50px;
+    float:left;
+}
+.item2{
+    float:right;
+    margin-left: 10px;
+}
+
+.panel-body{
+    border: 1px solid;
+    color: grey;
+    padding: 8px; 
+}
+.form-group{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-control{
+    /*margin-right: 0px;*/
+    /*align-items: left;*/
+    margin-right: 700px;
+}
+.form-item {
+    float: left; 
+    border-radius: 2 , 2, 2, 2;
+}
+.panel-heading1{
+    border: 0.3px solid;
+    color: grey;
+    /*padding: 0px;*/
+    background-color: #F5F5F5 ;
+}
+.panel-heading1 p {
+    color: #212121 ;
+    font-size: 15px ;
+    text-align:left;
+}
+/*.control-label {
+    margin-left: 200px ;
+    padding: 10px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+
+}*/
+.CourseNameShort{
+    /*margin-left: 200px ;*/
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.CourseNameFull{
+    /*margin-left: 200px ;*/
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.CorseCategory{ 
+    /*margin-left: 200px ;*/
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.CorseSubCategory{
+    /*margin-left: 200px ;*/
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.CourseDuration{
+    /*margin-left: 200px ;*/
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+    padding-top: 15px;
+}
+.CourseFees{
+    /*margin-left: 200px ;*/
+    padding: 5px;
+    padding-right: 11px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+
+.button{
+    margin-right: 700px;
+}
+.btn-primary1 {
+    border-width: 0.2px;
+    background-color: #337ab7 ;
+    border-color: darkblue ;
+    border-radius: 5px 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 5px;
+}
+.btn-primary2 {
+    border-width: 0.2px;
+    background-color: #d9534f ;
+    border-color: red ;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 5px;
+}

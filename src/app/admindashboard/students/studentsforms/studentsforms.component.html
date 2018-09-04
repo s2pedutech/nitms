@@ -1,0 +1,124 @@
+<div class="container">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3><strong>Add New Students</strong></h3>	
+			</div>
+			<div class="panel-heading1">
+				<i class="pad fa fa-th-large"></i> 
+				<h5>Add New student</h5>
+			</div>
+			<div class="panel-body">
+				<div class="col-lg-10">
+					<form role="form" [formGroup]="signupForm" (ngSubmit)="addedit()">
+					<div class="grid-container">
+						<div>
+							<label>
+								<div class="pad control-label col-xs-3"><b>Name</b>
+								</div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Date Of Birth</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Gender</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Mobile</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Alternate Mobile</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Email</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> User Name</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Password</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Permanent Address</b></div>
+							</label>
+							<br><br>
+							<label>
+								<div class="pad control-label col-xs-3"><b>Photo (*)</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b> Description</b></div>
+							</label>
+							<label>
+								<div class="pad control-label col-xs-3"><b>Status</b></div>
+							</label>
+						</div>
+						<div>
+							<div class="pad1 form-item col-xs-6">
+								<input formControlName="name" [(ngModel)]="name" type="text" class="form-control" placeholder="Name" />
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<!-- <div class="controls input-append date form_date" data-date="" data-date-format="dd-mm-yyyy" data-link-field="dtp_input1" data-link-format="yyyy-mm-dd"> -->
+							 		<input  formControlName="dob" [(ngModel)]="dob" size="16"  class="form-control" placeholder="Date of birth" type="date">
+									<!-- <span class="add-on">
+										<i class="icon-th"></i>
+									</span> -->
+								<!-- </div> -->
+								<!-- <input type="hidden"> -->
+							</div>	
+							<span class="help-block"></span>
+							<div class="pad1 form-item col-xs-6">
+								<label>
+									<input formControlName="gender" [(ngModel)]="gender" type="radio" value="male" />Male
+								</label>&nbsp;
+								<label>
+									<input formControlName="gender" [(ngModel)]="gender" type="radio" value="female" />Female
+								</label>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input formControlName="mobno" [(ngModel)]="mobno" type="text" class="form-control" placeholder="Mobile" />
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input formControlName="amobno" [(ngModel)]="amobno" type="text" class="form-control" placeholder="Alternate Mobile" />
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input formControlName="email" [(ngModel)]="email" type="email" class="form-control" placeholder="Email"/>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input formControlName="uname" [(ngModel)]="uname" type="email" class="form-control" placeholder="User Name"/>
+								<!-- disabled="!mydata" -->
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input formControlName="password" [(ngModel)]="password" type="text" class="form-control" placeholder="Password"/>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<textarea formControlName="paddress" [(ngModel)]="paddress" class="form-control"></textarea>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input type="file" (change)="onChange($event)" id="event_imgs" />
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<textarea formControlName="description" [(ngModel)]="description" class="form-control"></textarea>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<label>
+									<input formControlName="status" [(ngModel)]="status" type="radio" value="1"/>Active
+								</label>&nbsp;&nbsp;
+								<label>
+									<input formControlName="status" [(ngModel)]="status" type="radio" value="0"/>Inactive
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail" class="control-label col-xs-3"></label>
+						<div class=" button col-lg-5">
+							<input type="submit" class="btn-primary1" value="Add"/>
+							<input (click)="Cancel(false)" class="btn-primary2" value="Cancel"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>

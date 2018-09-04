@@ -1,0 +1,336 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.panel-body{
+    border: 1px solid;
+    color: grey;
+    padding: 8px; 
+}
+.form-group{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-control{
+    margin-right: 400px;
+}
+.form-item {
+    float: left; 
+}
+.panel-heading1{
+    border: 0.3px solid;
+    color: grey;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+.control-label {
+    margin-left: 200px ;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.button{
+    margin-right: 700px;
+}
+.btn-primary1 {
+    border-width: 0.2px;
+    background-color: #337ab7 ;
+    border-color: darkblue ;
+    border-radius: 5px 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 5px;
+}
+.btn-primary2 {
+    border-width: 0.2px;
+    background-color: #d9534f ;
+    border-color: red ;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 5px;
+}
+.pad {
+    padding: 13px;
+}
+.pad1 {
+    padding: 9px;
+}
+img{
+    height: 10px;
+    width: 10px;
+    /*.pad {
+        padding: 12px;
+    }
+    .pad1 {
+        padding: 9px;
+    }*/
+}
+/*.container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.item1{
+    float:left;
+}
+.item2{
+    float:right;
+    margin-left: 10px;
+}
+.radio-inline{
+    padding-left: 380px;
+}
+.panel-body{
+    border: 1px solid;
+    color: grey;
+    padding: 8px; 
+}
+.form-group{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-control{
+    margin-right: 700px;
+}
+.radio-inline1{
+    margin-right: 700px;
+}
+.form-item {
+    float: left; 
+    border-radius: 2 , 2, 2, 2;
+}
+.panel-heading1{
+    border: 0.3px solid;
+    color: grey;
+    background-color: #F5F5F5 ;
+}
+.panel-heading1 p {
+    color: #212121 ;
+    font-size: 15px ;
+    text-align:left;
+}
+.control-label {
+    margin-left: 200px ;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+
+    float: right;
+
+}
+.button{
+    margin-right: 700px;
+}
+.btn-primary1 {
+    border-width: 0.2px;
+    background-color: #337ab7 ;
+    border-color: darkblue ;
+    border-radius: 5px 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 5px;
+}
+.btn-primary2 {
+    border-width: 0.2px;
+    background-color: #d9534f ;
+    border-color: red ;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 5px;
+}*/
+/*.grid-container{
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.panel-body{
+    border: 1px solid;
+    color: grey;
+    padding: 8px; 
+}
+.form-group{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-control{
+    margin-right: 400px;
+} 
+
+.panel-heading1{
+    border: 0.3px solid;
+    color: grey;
+    font-size: 20px;
+   
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+.sec1{
+    padding: 5px;
+    color:black;
+}
+.sec2{
+    padding: 5px;
+    color:black;
+}
+.sec3{
+    padding: 5px;
+    color:black;
+}
+.sec4{
+    padding: 5px;
+    color:black;
+}
+.sec5{
+    padding: 5px;
+    color:black;
+}
+.sec6{
+    padding: 5px;
+    color:black;
+}
+.sec7{
+    padding: 5px;
+    color:black;
+}
+.sec8{
+    padding: 5px;
+    color:black;
+}
+.sec9{
+    padding: 5px;
+    color:black;
+}
+.sec10{
+    padding: 5px;
+    color:black;
+}
+.sec11{
+    padding: 5px;
+    color:black;
+}
+.sec12{
+    padding: 5px;
+    color:black;
+}
+.sec13{
+    padding: 5px;
+    color:black;
+}
+.sec14{
+    padding: 5px;
+    color:black;
+}
+.sec15{
+    padding: 5px;
+    color:black;
+}
+.sec16{
+    padding: 5px;
+    color:black;
+}
+.sec17{
+    padding: 5px;
+    color:black;
+}
+.sec18{
+    padding: 5px;
+    color:black;
+}
+.sec19{
+    padding: 5px;
+    color:black;
+}
+.sec19{
+    padding: 5px;
+    color:black;
+}
+.sec20{
+    padding: 5px;
+    color:black;
+}
+.sec21{
+    padding: 5px;
+    color:black;
+}
+.sec22{
+    padding: 5px;
+    color:black;
+}
+.sec23{
+    padding: 15px;
+    color:black;
+    font-size: 20px;
+}
+.btn-class{
+    float:left;
+}
+
+
+.control-label1 {
+    padding: 5px;
+    margin-left: 200px ;
+    float: right;
+}
+.control-label2 {
+    padding: 7px;
+    margin-left: 200px ;
+    float: right;
+}
+.control-label3 {
+    padding: 8px;
+    margin-left: 200px ;
+    float: right;
+}
+.control-label4 {
+    padding: 8px;
+    margin-left: 200px ;
+    float: right;
+}
+.control-label5{
+    padding: 9px;
+    margin-left: 200px ;
+    float: right;
+}
+.control-label6 {
+    padding: 3px;
+    margin-left: 200px ;
+    float: right;
+}
+.ret{
+    padding: 3px;
+    margin-left: 200px ;
+    float: right;
+}
+.form-item {
+    padding: 5px ;
+
+}
+.form-item1 {
+    padding: 5px ;
+
+}
+.control-label {
+    margin-left: 200px ;
+
+    float: right;
+}
+.button{
+    margin-right: 700px;
+}
+.btn-primary1 {
+    border-width: 0.2px;
+    background-color: #337ab7 ;
+    border-color: darkblue ;
+    border-radius: 5px 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 5px;
+}
+.btn-primary2 {
+    border-width: 0.2px;
+    background-color: #d9534f ;
+    border-color: red ;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 5px;
+}*/

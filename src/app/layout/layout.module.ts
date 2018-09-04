@@ -5,9 +5,10 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
-import {FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+
 @NgModule({
     imports: [
         CommonModule,
@@ -15,7 +16,6 @@ import {FooterComponent } from './components/footer/footer.component';
         TranslateModule,
         NgbDropdownModule.forRoot()
     ],
-    declarations: [LayoutComponent, SidebarComponent, HeaderComponent,
-    FooterComponent]
+    declarations: [LayoutComponent, HeaderComponent, FooterComponent, SidebarComponent]
 })
 export class LayoutModule {}

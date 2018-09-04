@@ -1,13 +1,21 @@
-<div class="container">
+<!--<div class="container">
 	<h1><strong>Placement</strong></h1>
+	<br>
 	<table>
-		<tr *ngFor="let a of company">
+		<div *ngFor="let a of placement">
+			<div class="item">{{a.name}}</div>
 			<td>{{a.name}}</td>
 			<td>{{a.name}}</td>
-			<td>{{a.name}}</td>
-		</tr>
-		<!-- <tr ng-repeat="a in company" ng-if="$index % 3 == 0">
-			<td ng-repeat="a in company.slice($index,$index+3)">{{a.name}}</td>
-		</tr> -->
-</table>
+		</div>
+	</table>
+</div> -->
+<div class="contain">
+	<br><br>
+	<h1><strong>Placement</strong></h1><br>
+	<div class="grid-container">
+ 		<div *ngFor="let a of placement" >
+			<div class="grid-item">{{a.name}}</div>
+		</div>
+	</div>
+	<br>
 </div>

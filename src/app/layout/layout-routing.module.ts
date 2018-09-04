@@ -22,7 +22,9 @@ const routes: Routes = [
             { path: 'accrediation', loadChildren: './accrediation/accrediation.module#AccrediationModule'},
             { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusModule'},
             { path: 'contact', loadChildren: './contact/contact.module#ContactModule'},
-            { path: 'courses', loadChildren: './courses/courses.module#CoursesModule'}
+            { path: 'courses', loadChildren: './courses/courses.module#CoursesModule'},
+            { path: 'account', loadChildren: './account/account.module#AccountModule'},
+            { path: 'verifiedstudent', loadChildren: './verifiedstudent/verifiedstudent.module#VerifiedstudentModule'}
         ]
     }
 ];

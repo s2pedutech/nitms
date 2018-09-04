@@ -1,19 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { routerTransition } from '../router.animations';
+import { FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+//import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+
+import { AuthService } from '../auth.service';
 
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
-    styleUrls: ['./login.component.scss'],
-    animations: [routerTransition()]
+    styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-    constructor(public router: Router) {}
-
-    ngOnInit() {}
-
-    onLoggedin() {
-        localStorage.setItem('isLoggedin', 'true');
+	email: string;
+  	password: string;
+    loginForm;
+    constructor(public router: Router, public authService: AuthService, public fb: FormBuilder) {
+        this.createForm();
     }
+    createForm(){
+        this.loginForm = this.fb.group({
+            email: '',
+            password: '',
+        });
+    }
+    login() {
+        console.log(this.email);
+        this.authService.login(this.email, this.password);
+  	}
+    ngOnInit() {}
 }

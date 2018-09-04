@@ -1,0 +1,28 @@
+div{
+	margin-right: 120px;
+	margin-left: 120px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+table{
+    width: 70%;
+    max-width: 70%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+th{
+	font-size: 20px;
+}
+th, td{
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.resultimg{
+    height:250px;
+    width: 200px;
+}
+.certificateimg{
+	height: 200px;
+	width: 300px;
+}

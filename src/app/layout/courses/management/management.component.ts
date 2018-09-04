@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CardComponent } from '../card/card.component';
+import { CourseService } from '../../../course.service';
 
 @Component({
   selector: 'app-management',
@@ -7,28 +9,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./management.component.scss']
 })
 export class ManagementComponent implements OnInit {
-
-data = [{
-	title:'Management Programs',
-	desc:'Management courses that we offer are highly compatible with International standards. ',
-},
-{
-	title:'Professional Management Programs',
-	desc:'Professional courses that we offer come with a real & holistic approach for the professionals already working in the',
-	img:'assets/images/pm1.jpg',
-},
-{
-	title:'Executive Management Programs',
-	desc:'Executive Management courses come with a specific approach towards the professionals who are working with a specific ',
-	img:'assets/images/em.jpg',
-},
-{
-	title:'Diploma Programs (Six Months Diploma Course)',
-	img:'assets/images/dm.jpg',
-}];
-
-  constructor() { }
-
+	Comdata : any;
+	data : any;
+	mdata = [];
+  constructor(private router : Router, public courseService: CourseService) {
+  		this.data = this.courseService.getCourses();
+		console.log(this.data);
+		this.Comdata = this.data[4];
+		this.mdata = this.Comdata.cards;
+		console.log(this.mdata);
+  	}
+  	GoTo(item){
+		var d:any = {};
+		d.category = this.Comdata.name;
+		d.title = item.title;
+		this.router.navigate(['/courses/details'],{queryParams: d});
+	}
   ngOnInit() {
   }
 

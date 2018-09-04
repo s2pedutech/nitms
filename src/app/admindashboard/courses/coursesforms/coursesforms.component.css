@@ -1,0 +1,180 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.panel-body{
+    border: 1px solid;
+    color: grey;
+    padding: 8px; 
+}
+.form-group{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-control {
+    margin-right: 400px;
+}
+.form-item {
+    float: left;
+}
+.panel-heading1 {
+    border: 0.3px solid;
+    color: grey;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+.control-label {
+    margin-left: 100px ;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.button{
+    margin-right: 700px;
+}
+.btn-primary1 {
+    border-width: 0.2px;
+    background-color: #337ab7 ;
+    border-color: darkblue ;
+    border-radius: 5px 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 5px;
+}
+.btn-primary2 {
+    border-width: 0.2px;
+    background-color: #d9534f ;
+    border-color: red ;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 5px;
+}
+.pad {
+    padding: 7px;
+}
+.pad1 {
+    padding: 5px;
+}
+/*.container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.panel-heading{
+    font-size: 25px;
+}
+
+.item2{
+    float:right;
+    margin-left: 10px;
+}
+.radio-inline{
+    padding-left: 380px;
+}
+.panel-body{
+    border: 1px solid;
+    color: grey;
+    padding: 8px; 
+}
+.form-group{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-control{
+    
+    margin-right: 700px;
+}
+.radio-inline1{
+    
+    margin-right: 700px;
+}
+.form-item {
+    float: left; 
+    border-radius: 2 , 2, 2, 2;
+}
+.panel-heading1{
+    border: 0.3px solid;
+    color: grey;
+    
+    background-color: #F5F5F5 ;
+}
+.panel-heading1 p {
+    color: #212121 ;
+    font-size: 15px ;
+    text-align:left;
+}
+
+.CourseNameShort{
+    
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.CourseNameFull{
+    
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.CorseCategory{ 
+    
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.CorseSubCategory{
+   
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.form-control {
+    padding: 5px;
+}
+.CourseDuration{
+    
+    padding: 5px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+    padding-top: 15px;
+}
+.CourseFees{
+    
+    padding-right: 11px;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+
+.button{
+    margin-right: 700px;
+}
+.btn-primary1 {
+    border-width: 0.2px;
+    background-color: #337ab7 ;
+    border-color: darkblue ;
+    border-radius: 5px 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 5px;
+}
+.btn-primary2 {
+    border-width: 0.2px;
+    background-color: #d9534f ;
+    border-color: red ;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 5px;
+}*/

@@ -1,0 +1,128 @@
+<div class="container">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3><strong>Add New Admission</strong></h3>	
+			</div>
+			<div class="panel-heading1">
+				<i class="fa fa-th-large"></i>
+				<h5>Add New Admission</h5>
+			</div>
+			<div class="panel-body">
+				<div class="col-lg-10">
+					<hr>
+					<div class="cont">Register Student for course
+					</div>
+					<form role="form" [formGroup]="admissionForm" (ngSubmit)="addedit()">
+						<div class="grid-container">
+							<div>
+								<label>
+									<div class="pad control-label col-xs-3"><b>Select Student</b></div>
+								</label>
+								<label>
+									<div class="pad control-label col-xs-3"><b>Select Course</b></div>
+								</label>
+								<label>
+									<div class="pad control-label col-xs-3"><b>Select Sub-Course</b></div>
+								</label>
+								<label>
+									<div class="pad control-label col-xs-3"><b>Select Course-Category</b></div>
+								</label> 
+								<label>
+									<div class="pad control-label col-xs-3"><b>Enrollment Number</b></div>
+								</label>
+								<label>
+									<div class="pad control-label col-xs-3"><b>Course Total Fees</b></div>
+								</label>
+								<label>
+									<div class="pad control-label col-xs-3"><b>Date of Admission</b></div>
+								</label>
+								<!-- <label>
+									<div class="pad control-label col-xs-3"><b>Remarks</b></div>
+								</label> -->
+							</div>
+							<div>
+								<div class="pad form-item col-xs-6">
+									<select class="form-control" formControlName="name" [(ngModel)]="name" (ngModelChange)="changename($event)" >
+										<option [ngValue]="a" *ngFor="let a of studentNotEnrolled">{{a.name}}</option>
+									</select>
+								</div>
+								<div class="pad form-item col-xs-6">
+									<select formControlName="course" [(ngModel)]="course" class="form-control" (ngModelChange)="changecourse($event)">
+										<option [ngValue]="a" *ngFor = "let a of courses">{{a.catname}}</option>
+									</select>
+								</div>
+								<div class="pad form-item col-xs-6">
+									<select formControlName="subcourse" [(ngModel)]="subcourse" class="form-control" (ngModelChange)="changesubcourse($event)">
+										<option [ngValue]="a" *ngFor = "let a of subCourse">{{a.subcatname}}</option>
+									</select>
+								</div>
+								<div class="pad form-item col-xs-6">
+									<select formControlName="list" [(ngModel)]="list" class="form-control">
+										<option [ngValue]="a" *ngFor = "let a of courselist">{{a.part}}</option>
+									</select>
+								</div>	
+								<div class="pad1 form-item col-xs-6">
+									<input type="text" placeholder="Enrollment Number" disabled="true" class="form-control" formControlName="enum" [(ngModel)]="enum" />
+								</div>
+								<div class="pad1 form-item col-xs-6">
+									<input type="text" placeholder="Course Fees" class="form-control" formControlName="fees" [(ngModel)]="fees" />
+								</div>
+								<div class="pad1 form-item col-xs-6">
+									<input type="date" placeholder="admission_date" class="form-control" formControlName="addate" [(ngModel)]="addate" />
+								</div>
+								<!-- <div class="pad1 form-item col-xs-6">
+									<textarea name="remark" class="form-control" id="remark"></textarea>
+								</div> -->
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail" class="control-label col-xs-3"></label>
+							<div class=" button col-lg-5">
+								<input type="submit" class="btn-primary1" value="Add" />
+								<input (click)= "Cancel(false)" type="submit" class="btn-primary2" value="Cancel" />	
+							</div>
+						</div>
+					</form>
+<!-- 					<div class="cont"> Create Login Details </div>
+					<form role="form"  action="" class="form-horizontal" name="colg_detail" method="post">
+						<div class="grid-container">
+							<div>
+								<div class="pad control-label col-xs-3"><b>User Name</b></div>
+								<div class="pad control-label col-xs-3"><b>Password</b></div>
+								<div class="pad control-label col-xs-3"><b>Confirm Password</b></div>
+								<div class="pad control-label col-xs-3"><b>Status</b></div>
+							</div>
+							<div>
+								<div class="pad1 form-item col-xs-6">
+									<input type="text" class="form-control" placeholder="Title" value=""/>
+								</div>
+								<div class="pad1 form-item col-xs-6">
+									<input type="Password" class="form-control" placeholder="Password" value=""/>
+								</div>
+								<div class="pad1 form-item col-xs-6">
+									<input type="Password" class="form-control" placeholder="Confirm Password" value=""/>
+								</div>
+								<div class="pad1 form-item col-xs-6">
+									<label>
+										<input type="radio" name="status" class="form-control" id="status" value="1"/>Active
+									</label>
+									<label>
+										<input type="radio" name="status" class="form-control" id="status2" value="0"/>Inactive
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail" class="control-label col-xs-3"></label>
+							<div class=" button col-lg-5">
+								<input type="submit" class="btn-primary1" value="Add" />
+								<input (click)= "Cancel(false)" type="submit" class="btn-primary2" value="Cancel" />	
+							</div>
+						</div>
+					</form> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

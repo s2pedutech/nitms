@@ -1,0 +1,33 @@
+.navbar {
+    color: #fff;
+    background-color: #242c42;
+}
+.pad {
+    padding-left: 385px;
+}
+li{
+    display:inline;
+}
+table{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+th, td{
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.photo{
+    height: 150px;
+    width: 120px;
+}
+.resultimg{
+    height: 250px;
+    width: 200px;
+}
+.certimg{
+    height: 250px;
+    width: 300px;
+}

@@ -1,0 +1,102 @@
+<div>
+	<div>
+		<h1>{{carddata.title}}</h1>
+		<h2>Course Info</h2>
+		<p>{{carddata.desc}}</p>
+	</div>
+    <div id="diploma">
+        <!-- <p class="heading">{{carddata.list[0].name}}</p> -->
+		<table border="1" class="table" *ngFor="let a of carddata.table">
+		<tr>
+			<th class="heading" colspan="2">{{a.name}}</th>
+		</tr>
+		<tr>
+			<th>Eligibility: </th>	
+			<td>{{a.eligibility}}</td>
+		</tr>
+		<tr>
+			<th>Duration</th>
+			<td>{{a.duration}}</td>
+		</tr>
+		<tr>
+			<th>Fees</th>
+			<td>{{a.fees}}</td>
+		</tr>
+		<tr>
+			<th>Syllabus</th>	
+			<td>
+            <ul *ngFor="let item of a.syllabus">
+            <li >{{item.part}}</li> 
+                <ol>
+                <li *ngFor="let uri of item.data">
+                {{uri.name}}
+                </li>
+                </ol>
+            </ul>
+            </td>
+		</tr>
+	</table>
+</div>
+<!--     
+    <div id="bach">
+        <p class="heading">{{carddata.list[1].name}}</p>
+	<table border="1" class="table">
+		<tr>
+			<th>Eligibility: </th>	
+			<td>{{carddata.bach.eligibility}}</td>
+		</tr>
+		<tr>
+			<th>Duration</th>
+			<td>{{carddata.bach.duration}}</td>
+		</tr>
+		<tr>
+			<th>Fees</th>
+			<td>{{carddata.bach.fees}}</td>
+		</tr>
+		<tr>
+			<th>Syllabus</th>	
+			<td>
+            <ul *ngFor="let item of carddata.bach.syllabus">
+            <li >{{item.part}}</li> 
+                <ol>
+                <li *ngFor="let uri of item.data">
+                {{uri.name}}
+                </li>
+                </ol>
+            </ul>
+            </td>
+		</tr>
+	</table>
+        </div>
+    
+    <div id="master">
+        <p class="heading">{{carddata.list[2].name}}</p>
+	<table border="1" class="table">
+		<tr>
+			<th>Eligibility: </th>	
+			<td>{{carddata.master.eligibility}}</td>
+		</tr>
+		<tr>
+			<th>Duration</th>
+			<td>{{carddata.master.duration}}</td>
+		</tr>
+		<tr>
+			<th>Fees</th>
+			<td>{{carddata.master.fees}}</td>
+		</tr>
+		<tr>
+			<th>Syllabus</th>	
+			<td>
+            <ul *ngFor="let item of carddata.master.syllabus">
+            <li>{{item.part}}</li>
+            <ol>
+                <li *ngFor="let uri of item.data">
+                {{uri.name}}
+                </li>
+            </ol>    
+            </ul>
+            </td>
+		</tr>
+	</table>
+        </div> -->
+<div>

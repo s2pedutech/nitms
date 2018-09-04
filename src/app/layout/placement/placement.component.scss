@@ -1,5 +1,19 @@
-table, tr, td{
+/*table, tr, td{
 	border: 1px solid black;
 	width: auto;
 	height: 50px;
+}*/
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	border: 1px solid grey;
+}
+.grid-item{
+	text-align: center;
+	border: 1px solid grey;
+	padding: 10px;
+}
+.contain{
+	margin-right:100px;
+	margin-left:100px;
 }

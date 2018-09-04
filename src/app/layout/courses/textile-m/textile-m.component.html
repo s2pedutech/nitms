@@ -1,1 +1,24 @@
-<div class = "grid-container"><app-card *ngFor ="let item of data" [data] = item ></app-card></div>
+<div class="contain">
+	<br><br>
+	<h1><strong>TEXTILE MANAGEMENT</strong></h1>
+	<br>
+	<div class = "grid-container row">
+		<mat-card class="col col-lg-6 col-md-6 col-sm-6 col-xs-12" *ngFor = "let data of tmdata">
+		  <div class="grid-item">
+		    <mat-card-title><strong>{{data.title}}</strong></mat-card-title>
+		    <ul>
+		      <li *ngFor="let a of data.list">{{a.name}}</li>
+		    </ul>
+		    <mat-card-content>
+		      <p>{{data.desc}}</p>
+		    </mat-card-content>
+		    <mat-card-actions>
+		      <button mat-button (click)="GoTo(data)">LEARN NOW</button>
+		    </mat-card-actions>
+		  </div>
+		  <!-- <div class="grid-item">
+		    <img mat-card-image class="image" src="{{data.img}}">
+		  </div> -->
+		</mat-card>
+	</div>
+</div>

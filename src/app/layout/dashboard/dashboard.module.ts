@@ -12,6 +12,9 @@ import {
 import { StatModule } from '../../shared';
 import { GetCourseComponent } from './components/get-course/get-course.component';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
     imports: [
@@ -19,14 +22,19 @@ import { GetCourseComponent } from './components/get-course/get-course.component
         NgbCarouselModule.forRoot(),
         NgbAlertModule.forRoot(),
         DashboardRoutingModule,
-        StatModule
+        StatModule,
+        BsDropdownModule.forRoot(),
+        TooltipModule.forRoot(),
+        ModalModule.forRoot()
     ],
+    exports: [BsDropdownModule, TooltipModule, ModalModule],
+    
     declarations: [
         DashboardComponent,
         TimelineComponent,
         NotificationComponent,
         ChatComponent,
         GetCourseComponent
-            ]
+    ]
 })
 export class DashboardModule {}

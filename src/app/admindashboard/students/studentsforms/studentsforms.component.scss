@@ -1,0 +1,59 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 350px auto;
+}
+.panel-body{
+    border: 1px solid;
+    color: grey;
+    padding: 8px; 
+}
+.form-group{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.form-control{
+    margin-right: 400px;
+}
+.form-item {
+    float: left; 
+}
+.panel-heading1{
+    border: 0.3px solid;
+    color: grey;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+.control-label {
+    margin-left: 200px ;
+    color:#212121;
+    font-weight: 10px;
+    font-size: 14px ;
+    float: right;
+}
+.button{
+    margin-right: 700px;
+}
+.btn-primary1 {
+    border-width: 0.2px;
+    background-color: #337ab7 ;
+    border-color: darkblue ;
+    border-radius: 5px 5px;
+    margin-right: 5px;
+    color: white;
+    padding: 5px;
+}
+.btn-primary2 {
+    border-width: 0.2px;
+    background-color: #d9534f ;
+    border-color: red ;
+    border-radius: 5px 5px;
+    color: white;
+    padding: 5px;
+}
+.pad {
+    padding: 7px;
+}
+.pad1 {
+    padding: 5px;
+}

@@ -1,0 +1,83 @@
+<div class="container">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3><strong> Add New Course</strong></h3>	
+			</div>
+			<div class="panel-heading1">
+				<i class="pad fa fa-th-large"></i> 
+				<h5> Add New Course</h5>
+			</div>
+			<div class="panel-body">
+				<div class="col-lg-10">
+					<form role="form" [formGroup]="courseForm" (ngSubmit)="addCourse()">
+					<div class="grid-container">
+						<div>
+							<label class="pad">
+								<div class="control-label col-xs-3"><b>Course Name (Short Form)</b></div>
+							</label>
+							<label class="pad">
+								<div class="control-label col-xs-3"><b>Course Name(Full form)</b></div>
+							</label>
+							<label class="pad">
+								<div class="control-label col-xs-3"><b>Course Category</b></div>
+							</label>
+							<label class="pad">
+								<div class="control-label col-xs-3"><b>Course Sub Category</b></div>
+							</label>
+							<label class="pad">
+								<div class="control-label col-xs-3"><b>Course Duration</b></div>
+							</label>
+							<label class="pad">
+								<div class="control-label col-xs-3"><b>Course Fees</b></div>
+							</label>
+							<label class="pad">
+								<div class="control-label col-xs-3"><b>Description</b></div>
+							</label>
+						</div>
+						<div>
+							<div class="pad1 form-item col-xs-6">
+								<input type="text" formControlName="short" [(ngModel)]="short" class="form-control" placeholder="Course Name (Short Form)"/>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input type="text" formControlName="full" [(ngModel)]="full" class="form-control" placeholder="Course Name(Full form)"/>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<select formControlName="category" [(ngModel)]="category" class="form-control">
+									<option *ngFor = "let a of course">{{a.catname}}</option>
+								</select>
+							</div>
+							<div class="pad1 form-item col-xs-6" >
+								<select name="course category"   formControlName="subcategory" [(ngModel)]="subcategory" class="form-control">
+									<option>--select--</option>
+									<!-- <option *ngFor = "let a of course">
+										<div *ngFor = "let b of a.subCategory">
+											{{b.subcatname}}
+										</div>
+									</option> -->
+								</select>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input type="text" formControlName="duration" [(ngModel)]="duration" class="form-control" placeholder="Course Duration"/>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input type="text" formControlName="fees" [(ngModel)]="fees" class="form-control" placeholder="Course Fees"/>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<textarea type="text" formControlName="description" [(ngModel)]="description" class="form-control">
+								</textarea>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputEmail" class="control-label col-xs-3"></label>
+						<div class=" button col-lg-5">
+							<input type="submit" class="btn-primary1" value="Add" name="add_gallery" />
+							<input (click)="Cancel(false)" type="submit" class="btn-primary2" value="Cancel"/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

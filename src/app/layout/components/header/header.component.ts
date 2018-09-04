@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+
     pushRightClass: string = 'push-right';
 
     constructor(private translate: TranslateService, public router: Router) {

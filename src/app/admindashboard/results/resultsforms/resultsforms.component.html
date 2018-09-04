@@ -1,0 +1,168 @@
+<div class="container">
+	<div class="row">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3><strong>Add New Exam Result</strong></h3>	
+			</div>
+			<div class="panel-heading1">
+				<i class="pad fa fa-th-large"></i> 
+				<h5>Add New Exam Result</h5>
+			</div>
+			<div class="panel-body">
+				<div class="col-lg-10">
+					<form role="form" [formGroup]="resultForm" (ngSubmit)="addResult()">
+					<div class="grid-container">
+						<div>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Select Student</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Course Category</b></div>
+							</label>
+							<!-- <label class= "pad">
+								<div class="control-label col-xs-3"><b>Exam Name</b></div>
+							</label> -->
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of Exam 1</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 1</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of exam 2</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 2</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of exam 3</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 3</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of exam 4</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 4</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of exam 5</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 5</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of exam 6</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 6</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of exam 7</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 7</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of exam 8</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Result Photo 8</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Date of Certificate</b></div>
+							</label>
+							<label class= "pad">
+								<div class="control-label col-xs-3"><b>Certificate</b></div>
+							</label>
+						</div>
+						<div>
+							<div class="pad1 form-item col-xs-6">
+								<select class="form-control" formControlName="name" (ngModelChange)="changename($event)" [(ngModel)]="name">
+									<option [ngValue]="a.uid" *ngFor="let a of student">{{a.name}}</option>
+								</select>
+							</div>
+							
+							<div class="pad1 form-item col-xs-6">
+								<input type="text" placeholder="Course Category" disabled="true" class="form-control" value={{part}} />
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem1date" [(ngModel)]="sem1date" placeholder="Date of exam" type="date"  value={{sem1date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem1date, 'sem1')" multiple required="required"/>
+								<img *ngIf="sem1result != null" src="{{sem1result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem2date" [(ngModel)]="sem2date" placeholder="Date of exam" type="date" value={{sem2date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem2date, 'sem2')" multiple required="required"/>
+								<img *ngIf="sem2result != null" src="{{sem2result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem3date" [(ngModel)]="sem3date" placeholder="Date of exam" type="date" value={{sem3date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem3date, 'sem3')" multiple required="required"/>
+								<img *ngIf="sem3result != null" src="{{sem3result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem4date" [(ngModel)]="sem4date" placeholder="Date of exam" type="date"  value={{sem4date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem4date, 'sem4')" multiple required="required"/>
+								<img *ngIf="sem4result != null" src="{{sem4result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem5date" [(ngModel)]="sem5date" placeholder="Date of exam" type="date" value={{sem5date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem5date, 'sem5')" multiple required="required"/>
+								<img *ngIf="sem5result != null" src="{{sem5result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem6date" [(ngModel)]="sem6date" placeholder="Date of exam" type="date" value={{sem6date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem6date, 'sem6')" multiple required="required"/>
+								<img *ngIf="sem6result != null" src="{{sem6result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem7date" [(ngModel)]="sem7date" placeholder="Date of exam" type="date" value={{sem7date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem7date, 'sem7')" multiple required="required"/>
+								<img *ngIf="sem7result != null" src="{{sem7result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="sem8date" [(ngModel)]="sem8date" placeholder="Date of exam" type="date" value={{sem8date}}>
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="onChange($event, sem8date, 'sem8')" multiple required="required"/>
+								<img *ngIf="sem8result != null" src="{{sem8result}}" disabled="true">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" formControlName="cerdate" [(ngModel)]="cerdate" placeholder="Date of certificate" type="date">
+							</div>
+							<div class="pad1 form-item col-xs-6">
+								<input class="form-control" type="file" (change)="getcertificate($event)" multiple required="required"/>
+							</div>
+							<!-- <div class="pad1 form-item col-xs-6">
+								<textarea class="form-control" formControlName="description" [(ngModel)]="description"></textarea>
+							</div> -->
+						</div>
+					</div>
+					<div class="btn-class">
+						<label for="inputEmail" class="control-label col-xs-3"></label>
+						<div class=" button col-lg-5">
+							<input type="submit" class="btn-primary1" value="Add" />
+							<input (click)= "Cancel(false)" type="submit" class="btn-primary2" value="Cancel" name="add_gallery" />	
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

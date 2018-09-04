@@ -1,0 +1,40 @@
+<div class="navbar-header">
+	<span class="navbar-brand">
+		<strong>Admin</strong>
+	</span>
+	<!-- <a class="float"><i class="fa fa-power-off fa-fw"></i> Logout </a> -->
+</div>
+<div class="grid-container">
+	<nav class="sidebar grid-item">
+	    <div class="list-group-item">
+	    	<div class="sidebar-search">
+				<div class="input-group custom-search-form">
+					<input type="text" class="form-control" placeholder="Search...">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><i class="fa fa-search"></i>
+						</button>
+					</span>
+				</div>
+			</div>
+			<a (click)= "display('students')" class="list-group-item"><i class="fa fa-dashboard fa-fw"></i>&nbsp;Students</a>
+			<a (click)= "display('admissions')" class="list-group-item"><i class="fa fa-dashboard fa-fw"></i>&nbsp;Admissions</a>
+			<a (click)= "display('payments')" class="list-group-item"><i class="fa fa-dashboard fa-fw"></i>&nbsp;Payments</a>
+			<a (click)= "display('results')" class="list-group-item"><i class="fa fa-dashboard fa-fw"></i>&nbsp;Results</a>
+			<a (click)= "display('courses')" class="list-group-item"><i class="fa fa-dashboard fa-fw"></i>&nbsp;Courses</a>
+			<a (click)= "display('coursescategory')" class="list-group-item"><i class="fa fa-dashboard fa-fw"></i>&nbsp;Courses Category</a>
+			<a (click)= "display('coursessubcategory')" class="list-group-item"><i class="fa fa-dashboard fa-fw"></i>&nbsp;Courses Sub-Category</a>
+			<a class="list-group-item" href="/dashboard"><i class="fa fa-power-off fa-fw"></i>&nbsp;Logout</a>
+		</div>
+	</nav>
+	<div class="grid-item">
+		<div class="panel-heading">
+			<app-students [data]="a" *ngIf = "isStudents"></app-students>
+			<app-admissions [data]="a" *ngIf = "isAdmissions"></app-admissions>
+			<app-payments [data]="a"  *ngIf = "isPayments"></app-payments>
+			<app-results [data]="a" *ngIf = "isResults"></app-results>
+			<app-courses [data]="a" *ngIf = "isCourses"></app-courses>
+			<app-coursescategory *ngIf = "isCoursescategory"></app-coursescategory>
+			<app-coursessubcategory *ngIf = "isCoursessubcategory"></app-coursessubcategory>
+		</div>
+	</div>
+</div>
